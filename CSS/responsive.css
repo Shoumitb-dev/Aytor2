@@ -1,0 +1,38 @@
+@media(min-width: 320px) and (max-width: 768px){
+
+#banner .slides{
+    height: 300px;
+}
+#banner .slides .bannerContent h2{
+font-size: 30px;
+}
+#banner .bannerdots {
+    display: none !important;
+}
+#banner .slides .bannerContent p{
+    font-size: 14px;
+}
+#banner .slides .bannerContent a{
+    color: #FFF;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: #FF6F61;
+    border-radius: 8px;
+    width: 70px;
+}
+#newProduct h1{
+    font-size: 26px;
+}
+#bannerpart2 .slider1{
+    height: 200px;
+}
+#bannerpart2 .slider1 .heading5 h3{
+    font-size: 20px;
+}
+#bannerpart2 .slider1 .heading5 p{
+    font-size: 10px;
+}
+
+}

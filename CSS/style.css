@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,600&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryFont:'Josefin Sans',sans-serif;
+    --secondaryFont: 'Roboto',sans-serif;
+    --primaryColour:#FF6F61;
+    --secondaryColour:#1D1D1D;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,p,span,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--primaryFont);
+}
+/* common css ends here */
+#customNavbar ul li a{
+    color: var(--Text-Color, #11161E);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   padding: 37px 22px;
+   transition: 200ms;
+}
+#customNavbar ul li a:hover{
+    color: #FF6F61;
+}
+.iconsgrp ul li{
+    display: inline-block;
+}
+.iconsgrp ul li a{
+    margin: 0 15px;
+    color: #151A32;
+    font-size: 20px;
+}
+.iconsgrp ul li a .cartNumber{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: #FFF;
+font-size: 14px;
+border-radius: 50%;
+text-align: center;
+line-height: 18px;
+
+
+    background-color: var(--primaryColour);
+}
+.navbar_sm .logo img{
+    height: 50px;
+}
+.navbar_sm{
+   padding: 20px 0;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.navbar_sm .menu{
+    font-size: 20px;
+}
+.navbar_sm .menu button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.navbar_sm .offcanvas-header img{
+    height: 30px;
+    
+}
+.navbar_sm .offcanvas-body ul{
+    text-align: left;
+    padding-left: 20px;
+}
+.navbar_sm .offcanvas-body ul a{
+    padding: 10px 0;
+    display: block;
+    color: var(--secondaryColour);
+}
+.navbar_sm .offcanvas{
+    width: 80%;
+}
+/* banner section starts here */
+#banner{
+    position: relative;
+}
+#banner .slides{
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner .slides .bannerContent h4 {
+    color: #1D1D1D;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+#banner .slides .bannerContent h2{
+    color: #1D1D1D;
+font-size: 64px;
+font-weight: 700;
+line-height: 74px; 
+}
+#banner .slides .bannerContent p{
+    color: #1D1D1D;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+}
+#banner .slides .bannerContent{
+
+    transform: translateY(200%);
+    opacity: 0;
+    transition: 0.35s ease;
+}
+#banner .slides.slick-active .bannerContent{
+    transform: translateY(0%);
+    opacity: 1;
+}
+#banner .slides .bannerContent a {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    width: 196.36px;
+    height: 56px;
+    background-color: #FF6F61;
+    color: #FFF;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    transition: 300ms;
+}
+#banner .bannerdots{
+    position: absolute;
+    bottom: 32%;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+}
+#banner .bannerdots button{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    border: none;
+    outline: none;
+    color: transparent;
+    margin-left: 5.45px;
+    transition: 300ms;
+}
+#banner .bannerdots .slick-active button{
+   width: 30px;
+   background-color: #FF6F61; 
+}
+/* new product */
+#newProduct{
+    padding: 100px 0;
+}
+#newProduct .productslide{
+    /* outline: 10px solid red; */
+}
+#newProduct h1{
+    color: var(--Text-Color, #11161E);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 46px;
+margin-top: 86px;
+margin-bottom: 24px;
+}
+
+.productslide .productimg img{
+    width: 100%;
+}
+.productslide .productimg {
+    position: relative;
+}
+.productslide .text{
+    text-align: center;
+}
+
+.productslide .text p{
+    color: var(--Paragraph-Color, #444);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.productslide .text h4{
+    color: var(--Text-Color, #11161E);
+text-align: center;
+
+/* Heading - H6 */
+font-family: Josefin Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 155.556% */
+}
+
+.productslide .productimg .saleText{
+    padding: 0 9px;
+    background-color: var(--primaryColour);
+    display: inline-block;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    border-radius: 13px 0 0 13px;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    transform: rotate(-90deg);
+}
+.productslide .productimg .overlay{
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.productslide .productimg .overlay a{
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    line-height: 39px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: 200ms;
+}
+.productslide .productimg .overlay li{
+    transform: translateX(-50px);
+    opacity: 0;
+    visibility: 1;
+    transition: 200ms;
+    transition-delay: calc(0.15s * var(--number));
+}
+.productslide .productimg:hover  .overlay li{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+.productslide .productimg .overlay li:hover a{
+    background-color: var(--primaryColour);
+    color: #FFF;
+}
+.productslider .productslide{
+    display: block;
+}
+/* banner2 starts here */
+#bannerpart2 .slider1{
+    width: 100%;
+    height: 524px;
+    background-size: cover;
+    background-position: center;
+}
+#bannerpart2{
+    padding: 0 0 80px 0;
+}
+.heading5 h3{
+    color: #FFF;
+font-family: Josefin Sans;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 46px;
+}
+.heading5 p{
+    color: #FFF;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+}
+.heading5 button{
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    width: 196.36px;
+    height: 56px;
+    background-color: transparent;
+    border: 1px solid var(--Comon-Colot, #FFF);
+    padding: 10px 10px 10px 10px;
+    color: #FFF;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    transition: 300ms;
+}
+/* banner part2 end here */
